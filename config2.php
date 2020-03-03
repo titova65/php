@@ -12,4 +12,6 @@ mysqli_select_db($connection, "db_clients");
 if (!$connection){
 die ("Не удается подключиться к базе данных");
 }
+date_default_timezone_set('Europe/Tallinn');
+$connection->set_charset('utf8');
 ?>
